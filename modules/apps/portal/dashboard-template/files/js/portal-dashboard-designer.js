@@ -398,7 +398,8 @@ $(function() {
 		var w = Number($dummy.attr('data-w'));
 		var h = Number($dummy.attr('data-h'));
 		var widget = layout.add_widget(widgetTemplate(), w, h, 1, 2);
-		$('.dropdown.open .dropdown-toggle').dropdown('toggle');
+		//$('.dropdown.open .dropdown-toggle').dropdown('toggle');
+		$('.dropdown').removeClass('open');
 		//registerEventsToWidget(widget);
 	});
 

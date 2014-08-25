@@ -349,7 +349,8 @@ $(function() {
 		var h = Number($dummy.attr('data-h'));
 		var widget = layout.add_widget(itemTmp(), w, h, 1, 2);
 		registerEventsToWidget(widget);
-		$('.dropdown.open .dropdown-toggle').dropdown('toggle');
+		//$('.dropdown.open .dropdown-toggle').dropdown('toggle');
+		$('.dropdown').removeClass('open');
 	});
 
 	/*

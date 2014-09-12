@@ -220,7 +220,7 @@
                     <port type="https">9443</port>
                 </ports>
                 <properties>
-                 <property name="webContext">admin</property>
+                    <property name="webContext">admin</property>
                 </properties>
             </instance>
             <instance name="dss003" type="worker" nonBlockingTransportEnabled="false">
@@ -248,7 +248,7 @@
                     <!--<parameter name="cmdArg" value="debug 5005" />-->
                 </class>
                 <!--<class>-->
-                    <!--<name>org.wso2.carbon.integration.common.extensions.usermgt.UserPopulateExtension</name>-->
+                <!--<name>org.wso2.carbon.integration.common.extensions.usermgt.UserPopulateExtension</name>-->
                 <!--</class>-->
             </extentionClasses>
         </platformExecutionManager>

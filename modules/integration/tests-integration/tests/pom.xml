@@ -11,9 +11,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.ues</groupId>
-    <artifactId>org.wso2.ues.ui.integration.test</artifactId>
+    <artifactId>org.wso2.ues.integration.test</artifactId>
     <packaging>jar</packaging>
-    <name>org.wso2.ues.ui.integration.test</name>
+    <name>org.wso2.ues.integration.test</name>
 
     <build>
         <plugins>
@@ -28,7 +28,6 @@
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <parallel>false</parallel>
-                    <skipTests>${skipUiTests}</skipTests>
                     <systemProperties>
                         <property>
                             <name>maven.test.haltafterfailure</name>
@@ -282,26 +281,6 @@
             <groupId>org.wso2.ues</groupId>
             <artifactId>ui-pages</artifactId>
             <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                    <artifactId>selenium-android-driver</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.opera</groupId>
-            <artifactId>operadriver</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                    <artifactId>selenium-remote-driver</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 

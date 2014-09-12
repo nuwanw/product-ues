@@ -20,13 +20,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">   
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.ues</groupId>
-    <artifactId>ues-ui-integration-tests</artifactId>
+    <artifactId>ues-integration-tests</artifactId>
     <packaging>pom</packaging>
     <version>1.5.0-SNAPSHOT</version>
-    <name>WSO2 UES UI Intetration Test</name>
+    <name>WSO2 UES Integration Test</name>
 
     <modules>
-        <module>tests-ui</module>
+        <module>tests</module>
     </modules>
 
 </project>

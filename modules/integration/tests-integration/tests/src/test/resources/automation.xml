@@ -188,8 +188,8 @@
 
             <instance name="lbw001" type="lb_worker_manager" nonBlockingTransportEnabled="true">
                 <hosts>
-                    <host type="worker">dss.wso2con.com</host>
-                    <host type="manager">mgt.dss.wso2con.com</host>
+                    <host type="worker">ues.wso2con.com</host>
+                    <host type="manager">mgt.ues.wso2con.com</host>
                 </hosts>
                 <ports>
                     <port type="nhttps">8243</port>
@@ -199,7 +199,7 @@
 
                 </properties>
             </instance>
-            <instance name="dss001" type="manager" nonBlockingTransportEnabled="false">
+            <instance name="ues001" type="manager" nonBlockingTransportEnabled="false">
                 <hosts>
                     <host type="default">localhost</host>
                 </hosts>
@@ -211,7 +211,7 @@
                 </properties>
             </instance>
 
-            <instance name="dss002" type="standalone" nonBlockingTransportEnabled="false">
+            <instance name="ues002" type="standalone" nonBlockingTransportEnabled="false">
                 <hosts>
                     <host type="default">localhost</host>
                 </hosts>
@@ -223,7 +223,7 @@
                     <property name="webContext">admin</property>
                 </properties>
             </instance>
-            <instance name="dss003" type="worker" nonBlockingTransportEnabled="false">
+            <instance name="ues003" type="worker" nonBlockingTransportEnabled="false">
                 <hosts>
                     <host type="default">localhost</host>
                 </hosts>

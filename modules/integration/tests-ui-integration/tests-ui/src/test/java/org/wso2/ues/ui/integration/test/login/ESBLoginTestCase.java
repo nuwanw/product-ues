@@ -40,7 +40,6 @@ public class ESBLoginTestCase extends UESIntegrationUITest {
 
     @Test(groups = "wso2.ues", description = "verify login to ESB Server")
     public void testLogin() throws Exception {
-//        boolean isCloud = isRunningOnCloud();
         LoginPage test = new LoginPage(driver);
         HomePage home = test.loginAs(userInfo.getUserName(), userInfo.getPassword());
         home.logout();

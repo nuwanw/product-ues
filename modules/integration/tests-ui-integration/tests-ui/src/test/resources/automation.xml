@@ -47,7 +47,7 @@
         <selenium>
             <!-- Change to enable remote webDriver -->
             <!-- URL of remote webDriver server  -->
-            <remoteDriverUrl enable="true">http://10.100.2.51:4444/wd/hub/</remoteDriverUrl>
+            <remoteDriverUrl enable="false">http://10.100.2.51:4444/wd/hub/</remoteDriverUrl>
 
             <!-- Type of the browser selenium tests are running" -->
             <browser>
@@ -220,7 +220,7 @@
                     <port type="https">9443</port>
                 </ports>
                 <properties>
-
+                 <property name="webContext">admin</property>
                 </properties>
             </instance>
             <instance name="dss003" type="worker" nonBlockingTransportEnabled="false">
@@ -247,9 +247,9 @@
                     <!--<parameter name="-DportOffset" value="0" />-->
                     <!--<parameter name="cmdArg" value="debug 5005" />-->
                 </class>
-                <class>
-                    <name>org.wso2.carbon.integration.common.extensions.usermgt.UserPopulateExtension</name>
-                </class>
+                <!--<class>-->
+                    <!--<name>org.wso2.carbon.integration.common.extensions.usermgt.UserPopulateExtension</name>-->
+                <!--</class>-->
             </extentionClasses>
         </platformExecutionManager>
 
